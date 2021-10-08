@@ -85,8 +85,7 @@
                   <div class="mt-3" data-aos="fade-up" data-aos-delay="200">
                     <a class="btn btn-primary shadow-sm mt-1 hover-effect" href="#contact">Contact Me <i
                         class="fas fa-arrow-right"></i></a>
-                    <button id="show" class="btn shadow-sm mt-1 hover-effect btn-outline-primary">View Name
-                      Alert</button>
+                    <a id="show" class="btn shadow-sm mt-1 hover-effect btn-outline-primary">View My CV</a>
                   </div>
                 </div>
               </div>
@@ -328,7 +327,8 @@
                     <div>
                       <h3 class="h5 mb-1">Frontend Development</h3>
                       <div class="text-muted text-small">Udemy-complete web developer zero to mastery
-                        <small>(2018)</small></div>
+                        <small>(2018)</small>
+                      </div>
                     </div><img src="images/resize_academy_logo.png" width="48" height="48" alt="Zuri" />
                   </div>
                 </div>
@@ -430,6 +430,9 @@
   <script src="./scripts/aos.min.js?ver=1.2.0"></script>
   <script src="./scripts/main.js?ver=1.2.0"></script>
   <script>
+   let link = document.querySelector('#show');
+    link.href = "./cv.pdf";
+    link.download = 'mbata-precious.pdf';
     console.log('talk to Api');
     const url = "https://leaflixchrisfolio.herokuapp.com/contact";
     const form = document.querySelector('form');
@@ -461,13 +464,7 @@
     })
   </script>
 
-  <!-- no.2 assignment to write a program in javascript that prints and shows name -->
-  <script>
-    let showName = document.querySelector('#show');
-    showName.onclick = function () {
-      alert("Mbata Precious Kelechi")
-    }
-  </script>
+ 
 
 
 </body>
